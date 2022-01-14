@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notices</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/css/Notice.css}" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AAiT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="...">Help</a>
+              </li>
+              <li>
+                  <a class="nav-link" href="#">About us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" ><a th:href="@{/login}" style="text-decoration: none;">Logout</a></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <diV class="notices">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img th:src="@{/images/huwaei.png}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Call for competition!</h5>
+                  <p class="card-text"> For all AAiT Students, Hawawi company given opportunity for AAiT Students. Those who have an idea on information communication technology (ICT), you can apply for competition in person by submitting your proposal to Students career development centre(SCDC).
+                    Best regards!.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img th:src="@{/images/Event.jpg}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">SciTeck Inspiration Event</h5>
+                  <p class="card-text">Addis Ababa University Institute of Technology (AAiT) is hosting a SciTech motivational speech, Q&A, and a soft tech product launch by 1888EC & 360Ground this coming Tuesday @2PM at AAiT auditorium.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img th:src="@{/images/besufkad.jpg}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">A2SV Q & A Besufkad Mekuria</h5>
+                  <p class="card-text">Previously he had conducted security research and developed a mobile threat defense (MTD) solution at a start-up information security company (BETTER), and then proceeded to oversee its deployment as the Project Manager at the Coca-Cola Company. 
+        
+                    He had the opportunity to help Coca-Cola secure hundreds of thousands of their users and devices in more than a dozen countries worldwide including USA, Canada, Myanmar, Cambodia, Vietnam and so on. He has also worked at VMWare, the World renowned cloud solutions and unified-endpoint-Management (UEM) company.
+                    
+                    📍 AAiT
+                    📅 January 6, Thursday at 5pm.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../../assets/images/Solomon.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Motivational Speech by Solomon Kassa (TechTalk with Solomon)</h5>
+                  <p class="card-text">Please let us know if there is anything you would like AAiT and Solomon Kassa to assist you with by filling out the google form below so that we can prepare ahead of time. https://docs.google.com/forms/d/e/1FAIpQLSf9Gba5vWxGZopI9WkGN59JHNTH-rJrP41fgj-KpfxebYN5Uw/viewform?usp=pp_url</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="../../assets/images/QR.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">[FINAL CALL to participate on  the Post-Survey – Computer Programming]</h5>
+                  <p class="card-text">ear Students, 
+        
+                    Please click on the Link or QR code for participating in Post-Survey concerning the course “Computer Programming”. There is a drawing of 500.00 birr for participants who completed the survey. Once completed, please keep your code, in case you win the reward. 
+                    
+                    <a>https://ndstate.co1.qualtrics.com/jfe/form/SV_6tJkrVQCE2kwl7g</a>
+                    
+                    The PECC Office </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </diV>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">&copy; 2021 All Rights Reserved</p>
+          
+              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact</a></li>
+              </ul>
+            </footer>
+          </div>
+           <script th:src="@{/js/bootstrap.bundle.min.js}" ></script>
+</body>
+</html>

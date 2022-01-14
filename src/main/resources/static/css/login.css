@@ -1,0 +1,7 @@
+.login{
+    display:grid;
+    grid-template-rows:30% 70%;
+    justify-content:center ;
+    row-gap: 10px;
+    margin-top:15vw;
+}

@@ -1,0 +1,13 @@
+.second_row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding:50px; */
+    justify-content:center ;
+}
+.first_row{
+    width:50%;
+    
+}
+.schools{
+    justify-content:center ;
+}
