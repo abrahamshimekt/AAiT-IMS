@@ -1,0 +1,13 @@
+.intro{
+    background-color: rgba(245, 245, 245, 0.904);
+    padding: 3em;
+    text-align: center;
+}
+
+.intro h1,p{
+    color: black;
+}
+.container_cards{
+    padding: 3rem;
+    justify-content: center;
+}

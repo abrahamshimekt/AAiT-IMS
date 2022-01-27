@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link th:href="@{/css/about.css}" rel="stylesheet">
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+    <link th:href="@{/css/styles2.css}" rel="stylesheet">
+</head>
+<body>
+<div th:replace="fragments/fragment::head"></div>
+<div th:replace="fragments/fragment :: header"></div>
+<div class="about-section">
+    <div class="intro">
+        <h1>About Ethio_pharmacy Designer Team</h1>
+        <p>Our team is formed from third year software students at Addis Ababa Univesrity.</p>
+        <p>Contact Us on Email.</p>
+    </div>
+
+    <div class="container_cards">
+        <div class="row" >
+            <div class="card" style="width: 25rem;">
+                <img src="/images/bam.jpg" class="card-img-top" alt="member's photo" >
+                <div class="card-body">
+                    <h5 class="card-title">Bamlaku Hiruy</h5>
+                    <p class="card-text">3rd year software engineering student</p>
+                    <a href="mailto:bamlakuhiruya@gmail.com" class="btn btn-primary">click here to Email</a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/images/fev.jpg" class="card-img-top" alt="member's photo">
+                <div class="card-body">
+                    <h5 class="card-title">Feven Belay</h5>
+                    <p class="card-text">3rd year software engineering student.</p>
+                    <a href="mailto:fevenbelay942@gmail.com" class="btn btn-primary">click here to Email</a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/images/hiw.jpg" class="card-img-top" alt="member's photo">
+                <div class="card-body">
+                    <h5 class="card-title">Hiwot Derese</h5>
+                    <p class="card-text">3rd year software engineering student.</p>
+                    <a href="mailto:hiwotderese16@gmail.com" class="btn btn-primary">click here to Email</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card" style="width: 25rem;">
+                <img src="/images/null.jpg" class="card-img-top" alt="member's photo">
+                <div class="card-body">
+                    <h5 class="card-title">Abraham Shimekt</h5>
+                    <p class="card-text">3rd year software engineering student.</p>
+                    <a href="mailto:shimektabraham@gmail.com" class="btn btn-primary">click here to Email</a>
+                </div>
+            </div>
+            <div class="card" style="width: 25rem;">
+                <img src="/images/null.jpg" class="card-img-top" alt="member's photo">
+                <div class="card-body">
+                    <h5 class="card-title">Rut Birhanu </h5>
+                    <p class="card-text">3rd year software engineering student.</p>
+                    <a href="mailto:birhanurut@gmail.com" class="btn btn-primary">click here to Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div th:replace="fragments/fragment::footer"></div>
+    <script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.container{
+    background-color: rgba(0,0,0,0.3);
+    padding-top:2vw;
+    border:2px rgb(0, 0, 15) solid;
+    height:fit-content;
+}
+.btn{
+    background-color: #1c1b1b;
+    border:solid #000;
+}
+.form{
+    width:20%;
+    padding:10px;
+}
+.footer{
+    margin-top:5em;
+}
+.custom img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+

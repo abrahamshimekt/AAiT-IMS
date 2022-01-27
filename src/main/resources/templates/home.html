@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head>
+    <head th:replace="fragments/fragment::head"></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link th:href="@{/css/home.css}" rel="stylesheet">
+    <link th:href="@{/css/styles.css}" rel="stylesheet">
+    <link th:href="@{/css/styles2.css}" rel="stylesheet">
+</head>
+<body>
+
+<div th:replace="fragments/fragment :: header"></div>
+
+<div class="container categories ">
+    <h1>Recents</h1>
+    <div class="row g-3 ">
+        <div  class=" custom  col-lg-4" >
+            <div class="card text-center h-100">
+                <div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/iceaddiss.jpg}" alt="">
+                        <div class="overlay">
+                            <a class="info" th:href="@{/home/habesha}">like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold card-title">.NET Conf in Addis 2021</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Here is c# developer conference we are hosting at ice. Please also invite your students. Its this saturday. For more info here is the event https://www.eventbrite.com/e/net-conf-in-addis-2021-tickets-226779211727
+
+                            This invite is courtesy of Ato Temesgen Fisseha! If you can, please join the event.
+                            Fitsum Assamnew Andargie, PhD
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="custom  col-lg-4">
+            <div class="card text-center h-100">
+                <div >
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/hult.jpg}" alt="">
+                        <div class="overlay">
+
+                            <a class="info" th:href="@{/home/std}">like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body mt-auto">
+                    <h5 class="fw-bold card-title">Hult Prize Registration</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Registration is open!!!!!! 
+
+                            👇👇👇👇👇👇👇👇👇👇👇
+                            https://oncampus.hultprize.org/aau
+                            
+                            
+                            Who is Eligible to compete?
+                            
+                            👉Students from Addis Ababa University are invited to form teams of 3-4.
+                            
+                            👉While only teams may compete, individuals who cannot form a team but are interested in competing should notify our organising team to find other individuals who are looking to form teams.
+                            
+                            👉All participants should belong to the same college or university. However, this may consist of a mix of programs and undergraduate, graduate and PhD level.
+                            
+                            👉Our application will be open for anyone currently enrolled in AAU.
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" custom  col-lg-4" >
+            <div class="card text-center h-100">
+                <div style = "width: 100%; ">
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/event.jpg}" alt="">
+                        <div class="overlay">
+
+                            <a class="info" th:href="@{/home/eyecare}">Like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold card-title">SciTech motivational speech</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Addis Ababa University Institute of Technology (AAiT) is hosting a SciTech motivational speech, Q&A, and a soft tech product launch by 1888EC & 360Ground this coming Tuesday @2PM at AAiT auditorium.
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div class="container categories ">
+    <h1>Notices</h1>
+    <div class="row g-3 ">
+        <div  class=" custom  col-lg-4" >
+            <div class="card text-center h-100">
+                <div>
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/dorm.jpg}" alt="">
+                        <div class="overlay">
+                            <a class="info" th:href="@{/home/habesha}">like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold card-title">About Dormitory</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Here is c# developer conference we are hosting at ice. Please also invite your students. Its this saturday. For more info here is the event https://www.eventbrite.com/e/net-conf-in-addis-2021-tickets-226779211727
+
+                            This invite is courtesy of Ato Temesgen Fisseha! If you can, please join the event.
+                            Fitsum Assamnew Andargie, PhD
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="custom  col-lg-4">
+            <div class="card text-center h-100">
+                <div >
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/final.jpg}" alt="">
+                        <div class="overlay">
+
+                            <a class="info" th:href="@{/home/std}">like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body mt-auto">
+                    <h5 class="fw-bold card-title">Final Exam Schedule</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Registration is open!!!!!! 
+
+                            👇👇👇👇👇👇👇👇👇👇👇
+                            https://oncampus.hultprize.org/aau
+                            
+                            
+                            Who is Eligible to compete?
+                            
+                            👉Students from Addis Ababa University are invited to form teams of 3-4.
+                            
+                            👉While only teams may compete, individuals who cannot form a team but are interested in competing should notify our organising team to find other individuals who are looking to form teams.
+                            
+                            👉All participants should belong to the same college or university. However, this may consist of a mix of programs and undergraduate, graduate and PhD level.
+                            
+                            👉Our application will be open for anyone currently enrolled in AAU.
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" custom  col-lg-4" >
+            <div class="card text-center h-100">
+                <div style = "width: 100%; ">
+                    <div class="hovereffect">
+                        <img class="img-responsive" th:src = "@{/images/pre.jpg}" alt="">
+                        <div class="overlay">
+
+                            <a class="info" th:href="@{/home/eyecare}">like</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold card-title">Section 5 Enterpreunership final exam</h5>
+                    <p>
+                        <a class="btn mt-auto btn-primary"style="margin: bottom 0;" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                          See More
+                        </a>
+                      </p>
+                      <div class="collapse" id="collapseExample">
+        
+                        <div class="card card-body">
+                            Addis Ababa University Institute of Technology (AAiT) is hosting a SciTech motivational speech, Q&A, and a soft tech product launch by 1888EC & 360Ground this coming Tuesday @2PM at AAiT auditorium.
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<svg viewBox="0 0 300 200">
+  
+  
+</svg>
+<div th:replace="fragments/fragment::footer"></div>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/pagination.js}"></script>
+</body>
+</html>
