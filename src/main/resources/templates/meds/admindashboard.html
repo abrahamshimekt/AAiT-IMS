@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace = "fragments/fragment :: head">
+
+</head>
+<body class = "bg-light">
+<div class="container-fluid shadow p-3 mb-5 bg-white rounded mt-5">
+    <div th:replace="fragments/loginfragment::admin"></div>
+
+
+    <h1>Added Events</h1>
+    <form method = "post" >
+        <table class="table">
+            <thead class="table-dark">
+            <tr>
+                <th>check</th>
+                <th>image</th>
+                <th >Name</th>
+                <th>Description</th>
+                <th>catagory</th>
+                <th>update</th>
+
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr th:each = "event: ${events}">
+                <td>
+
+                    <label th:for = "${event.id}" > <input type = "checkbox" name = "eventIds" th:value = "${event.id}" th:id = "${event.id}" style = "width: 30px; height: 30px;"/></label>
+                </td>
+                <th><img th:src="*{'data:image/jpg;base64,' + {event.eventImage}}" alt="" style = "width: 100px;"></th>
+                <td th:text = "${event.eventName}"></td>
+                <td th:text = "${event.eventDescription}"></td>
+                <td th:text = "${event.catagory.name}"></td>
+                <td><a th:href="@{'/update' + ${event.id}}" class = "btn btn-info">update</a></td>
+
+
+
+
+            </tr>
+
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+
+        </table>
+
+        <input class="btn btn-danger mt-2" type="submit" value="Delete"/>
+        <a class = "btn btn-primary text-center mt-2" th:href = "@{add}"> Add Event</a>
+    </form>
+</div>
+</body>
+</html>

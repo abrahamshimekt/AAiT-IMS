@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org/">
+<head><head th:replace="fragments/fragment::head"></head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+
+<div th:replace="fragments/fragment :: header"></div>
+
+
+<div class="container mt-5">
+  <h1 class  = "text-white text-center">Categories</h1>
+  <div class="add-message" th:unless = "${habesha} and ${habesha.size()}">
+    <p class = "text-center text-dark" >
+      No Product Available
+  </div>
+
+  <div class="container categories ">
+    <h1>Habesha</h1>
+    <div class="row g-3 ">
+        <div  th:each = "habesha: ${habesha}"  class=" custom col-12 col-md-6 col-lg-3" >
+            <div class="card text-center h-100">
+                <div>
+
+                        <img class="img-responsive" th:src="*{'data:image/jpg;base64,' + {habesha.medImage}}" alt="">
+
+                </div>
+                <div class="card-body">
+                    <h5 th:text = "${habesha.medName}" class="fw-bold card-title">Card title</h5>
+                    <h4 th:text = "${habesha.medPrice}" class = "fw-bold"></h4>
+                    <p  th:text = "${habesha.medDescription}" class = "card-text">Some make up the bulk of the card's content.</p>
+                    <a th:href="@{/userdashboard}" class="btn btn-primary btn-sm">Add to Cart</a>
+                </div>
+                
+<!--                <div class="modal fade" th:id="*{'exampleModalCenter' + {habesha.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">-->
+<!--                  <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--                      <div class="modal-content">-->
+<!--                          <div class="modal-header">-->
+<!--                              <h5 class="modal-title" id="exampleModalLongTitle">Add medicine</h5>-->
+<!--                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                                  <span aria-hidden="true">&times;</span>-->
+<!--                              </button>-->
+<!--                          </div>-->
+<!--                          <div class="modal-body">-->
+<!--                              <div class="card">-->
+<!--                                  <img class="card-img-top" th:src="*{'data:image/jpg;base64,' + {habesha.medImage}}" alt="Card image cap">-->
+<!--                                  <div class="card-body">-->
+<!--                                      <form action="/addMedToCart" method = "post">-->
+<!--                                          <input type="hidden" disabled = disabled name = "id" th:value = "*{habesha.id}">-->
+<!--                                          <input class = "form-control" name = "quantity" type = "number">-->
+<!--                                          <button class = "btn btn-primary mt-3" type = "submit" >Submit</button>-->
+<!--                                      </form>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                          </div>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--              </div>-->
+
+
+          </div>
+      </div>
+      </div>
+      </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+</div>
+
+<div th:replace="fragments/fragment::footer"></div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

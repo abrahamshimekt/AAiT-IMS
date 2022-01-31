@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<head th:replace="fragments/fragment::head"></head>
+    <title>Medicine Order</title>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+</head>
+<body>
+<header th:replace="fragments/fragment::header"></header>
+    <form class="container form"
+            method="POST"
+            th:action="@{/orders}"
+            th:object="${medicineOrder}">
+        <div class=" row">
+        
+        <div class="col-sm">
+        <h3>Order now</h3>
+            <div>
+
+                <label class="form-label" th:for="medName">Medicine Name: </label>
+                <input
+                        th:class="|form-control input-sm ${#fields.hasErrors('medName')? 'is-invalid': 'is-valid'}|"
+                        type="text"
+                        th:field="*{medName}"
+                />
+                <div
+                        class="invalid-feedback"
+                        th:if="${#fields.hasErrors('medName')}"
+                        th:errors="*{medName}"
+                ></div>
+            </div>
+            <div>
+
+                <label class="form-label" th:for="medCatagory">Medicine Category: </label>
+                <input
+                        th:class="|form-control input-sm ${#fields.hasErrors('medCatagory')? 'is-invalid': 'is-valid'}|"
+                        type="text"
+                        th:field="*{medCatagory}"
+                />
+                <div
+                        class="invalid-feedback"
+                        th:if="${#fields.hasErrors('medCatagory')}"
+                        th:errors="*{medCatagory}"
+                ></div>
+            </div>
+        <div>
+
+            <label class="form-label" th:for="deliveryName"> Delivery Name: </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('deliveryName')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{deliveryName}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('deliveryName')}"
+                    th:errors="*{deliveryName}"
+            ></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="deliveryStreet"
+            >Street address:
+            </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('deliveryStreet')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{deliveryStreet}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('deliveryStreet')}"
+                    th:errors="*{deliveryStreet}"
+            ></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="deliveryCity">City: </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('deliveryCity')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{deliveryCity}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('deliveryCity')}"
+                    th:errors="*{deliveryCity}"
+            ></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="deliveryState">State: </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('deliveryState')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{deliveryState}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('deliveryState')}"
+                    th:errors="*{deliveryState}"
+            ></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="deliveryZip">Zip code: </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('deliveryZip')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{deliveryZip}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('deliveryZip')}"
+                    th:errors="*{deliveryZip}"
+            ></div>
+        </div>
+</div>
+        
+        <div class="col-sm">
+        <h3 class="mt-2">Payment method</h3>
+        <div>
+            <label class="form-label" th:for="ccNumber">Credit Card #: </label>
+            <input
+                    th:class="|form-control input-sm ${#fields.hasErrors('ccNumber')? 'is-invalid': 'is-valid'}| "
+                    type="text"
+                    th:field="*{ccNumber}" />
+            <div class="invalid-feedback"
+                    th:if="${#fields.hasErrors('ccNumber')}"
+                    th:errors="*{ccNumber}"></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="ccExpiration">Expiration: </label>
+            <input
+                    th:class="|form-control ${#fields.hasErrors('ccExpiration')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{ccExpiration}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('ccExpiration')}"
+                    th:errors="*{ccExpiration}"
+            ></div>
+        </div>
+        <div>
+            <label class="form-label" th:for="ccCVV">CVV: </label>
+            <input
+                    th:class="|form-control ${#fields.hasErrors('ccCVV')? 'is-invalid': 'is-valid'}|"
+                    type="text"
+                    th:field="*{ccCVV}"
+            />
+            <div
+                    class="invalid-feedback"
+                    th:if="${#fields.hasErrors('ccCVV')}"
+                    th:errors="*{ccCVV}"
+            ></div>
+        </div>
+        <input
+                class="btn btn-primary mt-2"
+                type="submit"
+                value="Submit Order"
+        />
+</div>
+</div>
+    </form>
+
+<footer th:replace="fragments/loginfragment::footer"></footer>
+<script th:src="@{/js/bootstrap.bundle.min.js}"></script>
+</body>
+</html>
